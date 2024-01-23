@@ -1,0 +1,272 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #141414; 
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #181818; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+#logo {
+    height: 50px;
+    margin-right: auto; 
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav button:hover {
+    color: rgb(59, 94, 235);
+    text-decoration: none;
+    transform: translateY(-2px); 
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.search-bar-container {
+    display:flexbox;
+    justify-content: space-around;
+    margin: 20px 0;
+    transition: opacity 0.3s ease; 
+}
+
+.search-bar-container:hover {
+    opacity: 0.9; 
+}
+
+.search-bar-container input {
+    margin-left: 5.2%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333; 
+    background: rgba(255, 255, 255, 0.1); 
+    color: hsl(0, 0%, 100%); 
+    width: 25%;
+    transition: background-color 0.3s ease, width 0.3s ease; 
+}
+
+.search-bar-container input:focus {
+    background: rgba(255, 255, 255, 0.2); 
+    width: 30%; 
+    outline: none; 
+}
+
+
+.search-bar-container input::placeholder {
+    color: #bbb; 
+}
+
+.search-bar-container input:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.search-bar-container button {
+    padding: 10px; 
+    border-radius: 4px;
+    border: 1px solid #333; 
+    cursor: pointer;
+}
+
+#search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #333; 
+    width: calc(24%); 
+    margin: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px; 
+}
+
+.movie-card img {
+    width: 100%; 
+    border-radius: 8px; 
+}
+
+.movie-title {
+    margin: 8px 2px; 
+    color: rgb(255, 255, 255); 
+    font-size: 18px;
+}
+
+.movie-card input, .movie-card textarea {
+    width: 90%; 
+    margin: 5px 0; 
+    padding: 10px; 
+    border-radius: 4px; 
+    border: 1px solid #555; 
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff; 
+}
+
+@media screen and (max-width: 820px) {
+    .search-bar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar-container input {
+        width: 75%; 
+        margin-bottom: 10px; 
+        margin-left: 6%;
+    }
+
+    .search-bar-container input:focus {
+         background: rgba(255, 255, 255, 0.2);
+          width: 75%; 
+         outline: none;
+    }
+
+    .search-bar-container button {
+        width: 80%; 
+        margin-bottom: 10px; 
+        margin-left: 6%;
+    }
+
+    .movie-card {
+        width: 50%; 
+    }
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+
+.review-form input, .review-form textarea, .review-form button {
+    width: 90%; 
+    margin: 5px 0; 
+    padding: 10px; 
+    border-radius: 4px; 
+    border: 1px solid #555; 
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff; 
+}
+
+.review-form button {
+    background-color: rgb(59, 94, 235);
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.review-form button:hover {
+    background-color: rgb(9, 53, 229);
+}
+
+.add-review-btn {
+    width: 95%; 
+    margin: 5px 0; 
+    padding: 10px; 
+    border-radius: 4px;
+    border: 1px solid #555; 
+    background-color: rgb(59, 94, 235);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+.add-review-btn:hover {
+    background-color: rgb(9, 53, 229);
+}
+
+.added-review-btn {
+    width: 95%; 
+    margin: 5px 0;
+    padding: 10px; 
+    border-radius: 4px; 
+    border: 1px solid #555; 
+    background-color: #c0c0c0;
+    color: #fff; 
+    cursor: not-allowed;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+.added-review-btn:hover {
+    background-color: #a9a9a9; 
+}
+
+.user-info {
+    background-color: #383838; 
+    padding: 0 10px 10px 10px;
+    margin: 20px 0 0 0;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #505050; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.user-info p {
+    color: #e0e0e0; 
+    margin: 13px 0; 
+    font-size: 20px; 
+}
+
+.user-info button {
+    background-color: rgbrgb(59, 94, 235);
+    width: 80%;
+    color: #fff;
+    border: none;
+    margin: 13px 0 0 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 15px; 
+}
+
+.user-info button:hover {
+    background-color: rgb(9, 53, 229); 
+}
+
+
+
+.rating-stars {
+    cursor: pointer;
+    color: #ccc; /* 기본 별 색상 */
+}
+
+.rating-stars .star.selected {
+    color: #ffcc00; /* 선택된 별 색상 */
+}
+
+.button-style {
+    background-color: rgb(59, 94, 235);
+}
+

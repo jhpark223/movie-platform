@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="login-container">
+    <form action="login.jsp" method="post" class="login-form" id="login-form">
+        <img src="images/logo.png" alt="Company Logo" class="logo">
+        <div class="input-group">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div id="loginMessage" style="display: none; color: red;"></div>
+        <button type="submit" class="login-button">Login</button>
+        <button type="button" onclick="window.location.href='signup.html';" class="signup-button">Sign Up</button>
+    </form>
+</div>
+<script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other User Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Company Logo" id="logo">
+        <nav>
+            <button id="home-btn" onclick="window.location.href='loggedin.html';">Home</button>
+            <button id="profile-btn" onclick="window.location.href='profile.html';">Profile</button>
+            <button id="news-btn" onclick="window.location.href='news.html';">Articles</button>
+            <button id="about-btn" onclick="window.location.href='about.html';">About</button>
+        </nav>
+    </header>
+    <main>
+        <div class="user-info">
+            <h2>User Profile</h2>
+            <p id="nickname">Nickname: Loading...</p>
+            <p id="phone">Phone: Loading...</p>
+        </div>
+        <section id="user-movies">
+            <h2>User's Movies</h2>
+            <!-- list here -->
+        </section>
+    </main>
+    <script src="otherProfile.js"></script>
+</body>
+</html>
