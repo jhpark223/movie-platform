@@ -1,3 +1,15 @@
+## Tech Stack
+- **Frontend**: 
+  - HTML, CSS, JavaScript
+  
+- **Backend**:
+  - JSP (JavaServer Pages) for server-side logic and rendering
+  - SQL for database queries
+
+- **Database**:
+  - MySQL with the structure defined in `userDB.sql`
+
+
 ## 1.	Login / Sign up page
 <img width="432" alt="image" src="https://github.com/user-attachments/assets/15ddcf51-447e-47c9-8baa-c07b83351a39">
 <img width="423" alt="image" src="https://github.com/user-attachments/assets/dea727da-10b9-4ac9-b378-275154e0869d">
